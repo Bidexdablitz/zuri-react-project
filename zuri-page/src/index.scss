@@ -8,8 +8,29 @@
 }
 
 main {
-  padding-inline: 5rem;
-  padding-block: 2rem;
+  & {
+    position: relative;
+    margin-inline: 5rem;
+    margin-block: 2rem;
+  }
+
+  .share {
+    & {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      top: 1rem;
+      right: 1rem;
+      height: 2rem;
+      border-radius: 50%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border: 1px dotted #d0d5dd;
+    }
+    img {
+      display: inline-block;
+    }
+  }
 }
 
 .profile-details {

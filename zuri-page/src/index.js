@@ -2,12 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import profilePic from "./profile-pic.svg";
+import share from "./share.png";
 import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const slackname = "";
 root.render(
   <>
+    <div className="share">
+      <img src={share} alt="share" />
+    </div>
     <section className="profile-details">
       <img src={profilePic} id="profile__img" alt="profile" />
       <p id="twitter">twitter username</p>
