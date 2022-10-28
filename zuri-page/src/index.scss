@@ -27,6 +27,9 @@ main {
       overflow: hidden;
       border: 1px dotted #d0d5dd;
     }
+    &:hover {
+      background-color: #eaecf0;
+    }
     img {
       display: inline-block;
     }

@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import profilePic from "./profile-pic.svg";
-import share from "./share.png";
+import profilePic from "./images/profile-pic.svg";
+import share from "./images/share.png";
 import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const slackname = "";
+const slackname = "bidexdablitz";
+const twittername = "itzbidexdablitz";
 root.render(
   <>
     <div className="share">
@@ -14,8 +15,8 @@ root.render(
     </div>
     <section className="profile-details">
       <img src={profilePic} id="profile__img" alt="profile" />
-      <p id="twitter">twitter username</p>
-      <p id="slack">slack username</p>
+      <p id="twitter">{twittername}</p>
+      <p id="slack">{slackname}</p>
     </section>
     <section className="links">
       <a href="https://training.zuri.team/" id="btn__zuri" className="link">
