@@ -5,12 +5,13 @@
   font-size: 16px;
   color: #101828;
   background-color: #f4f5f7;
+  font-family: "Inter";
 }
 
 main {
   & {
     position: relative;
-    margin-inline: 5rem;
+    margin-inline: clamp(1rem, 5vw, 5rem);
     margin-block: 2rem;
   }
 
@@ -19,8 +20,7 @@ main {
       position: absolute;
       display: grid;
       place-items: center;
-      top: 1rem;
-      right: 1rem;
+      right: 0;
       height: 2rem;
       border-radius: 50%;
       aspect-ratio: 1 / 1;
@@ -43,15 +43,12 @@ main {
   text-transform: capitalize;
 }
 .links {
-  & {
-    padding-inline: 3rem;
-  }
   .link {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     display: block;
+    width: 100%;
     text-align: center;
     padding: 24px 32px 24px 32px;
     margin-bottom: 8px;
@@ -74,13 +71,29 @@ footer {
     margin-block: 1rem;
   }
   .copyright {
-    display: flex;
-    margin-top: 5rem;
-    justify-content: space-between;
+    & {
+      display: flex;
+      border-top: 1px solid #eaecf0;
+      padding-top: 1rem;
+      gap: 1.5rem;
+      margin-top: 5rem;
+      justify-content: space-between;  
+    }
+    
+    & > * {
+      width: fit-content;
+    }
 
     p {
       color: #667085;
-      text-transform: capitalize;
+      text-align: center;
+      text-transform: capitalize; 
     }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .copyright {
+    flex-direction: column;
   }
 }
