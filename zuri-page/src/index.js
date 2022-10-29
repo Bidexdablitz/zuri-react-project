@@ -8,6 +8,7 @@ import Footer from "./Footer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const slackname = "bidexdablitz";
 const twittername = "itzbidexdablitz";
+
 root.render(
   <>
     <div className="share">
