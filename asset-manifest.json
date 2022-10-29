@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/zuri-react-project/static/css/main.5165c7c7.css",
+    "main.js": "/zuri-react-project/static/js/main.0a10081e.js",
+    "static/media/profile-pic.svg": "/zuri-react-project/static/media/profile-pic.0bf2cf9f59f9d289d55b9e6352476d64.svg",
+    "index.html": "/zuri-react-project/index.html",
+    "main.5165c7c7.css.map": "/zuri-react-project/static/css/main.5165c7c7.css.map",
+    "main.0a10081e.js.map": "/zuri-react-project/static/js/main.0a10081e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5165c7c7.css",
+    "static/js/main.0a10081e.js"
+  ]
+}
